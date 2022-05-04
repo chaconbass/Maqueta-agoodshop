@@ -1,0 +1,33 @@
+.header {
+    display: flex;  
+    padding: 12px 64px;
+    border-bottom: 1px solid gray;
+    row
+}
+
+h3 {
+    flex-grow: 1;
+}
+
+.links {
+    display: flex;
+}
+
+.header-bar {
+    display: flex;
+}
+
+.links-list {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+
+button {
+    
+    border-radius: 16px;
+    border: 1px solid gray;
+    
+}
+
