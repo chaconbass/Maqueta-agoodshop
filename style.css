@@ -1,33 +1,42 @@
 .header {
     display: flex;  
     padding: 12px 64px;
-    border-bottom: 1px solid gray;
-    row
 }
 
 h3 {
     flex-grow: 1;
+    margin-left: 70px
 }
 
 .links {
     display: flex;
+    gap: 16px;
+    align-items: baseline;
 }
 
-.header-bar {
+.row {
     display: flex;
+    border-bottom: 1px solid gray;
+}
+
+ul {
+    padding: 0;
 }
 
 .links-list {
     display: flex;
     list-style: none;
-    gap: 8px;
+    gap: 16px;
+}
+ 
+a {
+    color: gray;
+    text-decoration: none;
 }
 
-
 button {
-    
     border-radius: 16px;
     border: 1px solid gray;
-    
+    height:fit-content;
 }
 
