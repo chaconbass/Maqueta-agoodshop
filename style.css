@@ -1,24 +1,39 @@
-.header {
-    display: flex;  
-    padding: 12px 64px;
+
+body {
+    max-width: 1439px;
 }
 
 main {
-    margin: 100px ;
+    padding: 1em 2em;
 }
+
 h3 {
     width: 100%;
 }
 
 .links {
-    display: flex;
-    gap: 16px;
-    align-items: baseline;
+    visibility: hidden;
+    justify-content: center
 }
 
+.links-list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1em;
+}
+.links-item-contactar {
+    border: 1px solid rgb(177, 173, 173);
+    background-color: white;
+    border-radius: 8px;
+    padding: 7px;
+}
 .row {
     display: flex;
-    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(177, 173, 173);;
+    padding: 0 2em;
+    
 }
 
 ul {
@@ -29,11 +44,6 @@ li {
     list-style: none;
 }
 
-.links-list {
-    display: flex;
-    gap: 16px;
-}
- 
 a {
     color: gray;
     text-decoration: none;
@@ -42,21 +52,21 @@ a {
 button {
     border-radius: 8px;
     border: 1px solid black;
-    background-color: rgb(41, 100, 225);
-    height: 32px;
+    background-color: #3883F6;
+    padding: 7px;
     color: white;
 }
 
-#contacto-button {
-    border: 1px solid gray;
-    background-color: white;
+#button-cargador-inalambrico {
+    background-color: #DD2121
 }
 
 .oferta {
     clear: both;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
+    
 }
 
 #oferta-texto-llamativo {
@@ -65,14 +75,19 @@ button {
 
 .oferta-info {
     display: block;
-    padding: 0px 32px;
-    
+    padding: 0;
+    display: inline-block;
 }
 
 
 .oferta-list {
     display: flex;
     gap: 12px;
+}
+
+.imagen-oferta {
+    height: 100%;
+    width: 100%;
 }
 
 .imagen-label {
@@ -83,27 +98,82 @@ button {
     top: 25px;
     left: 15px;
 }
-
-.imagen-accesorio {
-    display: ;
-}
-
-.accesorios-recomendados {
-    display:flex;
-    gap: 100px;
+    
+img {
+    width: 100%;
 }
 
 .accesorio {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: flex-start;
     border: 1px solid grey;
-    padding: 20px;
+    margin-bottom: 1em;
+    padding: 15px;
+
 }
 
 .sorteo {
     display: flex;
+    flex-direction: column;
     justify-content: baseline;
-    background-color:antiquewhite;
+    background-color:#EFF6FF;
+    padding: 2em;
+}
+
+.sorteo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: baseline;
+    gap: 0.5em;
+}
+
+input {
+    border: 1px ridge gray ;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+@media screen and (min-width:768px) {
+    .accesorios-recomendados {
+        display: flex;
+        gap: 1em;
+        
+    }
+    
+}
+
+@media screen and (min-width:768px) {
+    .oferta,
+    .sorteo {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+    
+}
+
+
+@media screen and (min-width:768px) {
+    .links {
+        visibility: visible;
+        justify-content: center
+    }
+}
+
+@media screen and (min-width:768px) {
+    .accesorio {
+        border: 1px solid grey;
+        margin-bottom: 1em;
+        padding: 15px;
+        width: 25%;
+    }
+    
+}
+
+/* footer */
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(177, 173, 173);;
+
 }
