@@ -7,39 +7,44 @@
     <title>a-good-shop</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd643845c1.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
+
+        
     <header>
-        <div class="row">
-            <h3>
-                agoodshop
-            </h3>
-            <div class="links">
-                <ul class="links-list">
-                    <li class="links-item"><a href="">Tienda</a></li>
-                    <li class="links-item"><a href="">Accesorios</a></li>
-                    <li class="links-item"><a href="">Soporte</a></li>
-                    <li class="links-item-contactar"><a href="">contactar</a> </li>
-                </ul>
-            </div>   
-        </div>
+        <!-- header row -->
+            <div class="row">
+                <h3>
+                    agoodshop
+                </h3>
+                <div class="links">
+                    <ul class="links-list">
+                        <li class="links-item"><a href="">Tienda</a></li>
+                        <li class="links-item"><a href="">Accesorios</a></li>
+                        <li class="links-item"><a href="">Soporte</a></li>
+                        <li class="links-item-contactar"><a href="">contactar</a> </li>
+                    </ul>
+                </div>   
+            </div>
     </header>
 
-    <main>
-        <div class="oferta">
-            <div class="imagen-oferta">
-                <img src="https://via.placeholder.com/471x466" alt="">
-                <span class="imagen-label">
-                        128gb
-                </span>
-            </div>
+   <main>
+       <!-- sección oferta  -->
+            <div class="oferta">
+                <div class="oferta-image">
+                    <img src="https://via.placeholder.com/471x466" alt="">
+                    <span class="imagen-label">
+                            128gb
+                    </span>
+                </div>
                 <div class="oferta-info">
                     <span id="oferta-texto-llamativo">
-                        oferta
+                        <strong>OFERTA</strong>
                     </span>
                     <h2>
-                        compra un ifhone 13 pro
+                        Compra un iFhone 13 pro
                     </h2>
                     <p>
                         iFhone 13: Tu nuevo superpoder. Nuestro sistema de cámara dual más avanzado. El chip que
@@ -50,109 +55,132 @@
                         agua.
                     </p>
                     <div class="precio-tag">
-                        <span class="precio">
-                            938,99€
+                        <span  class="precio">
+                            <strong>938,99€</strong>
                         </span>
-                    
                         <button>
-                        comprar
+                            comprar
                         </button>
                     </div>
                     <ul class="oferta-list">
-                        <li>
-                            Envío rápido, gratuito
-                            y sin contacto</li>
-                        <li>
-                            devoluciones
-                        </li>   
-                        <li>
-                            Posibilidad de pago a
-                            plazos
+                        <li class="oferta-list-item">
+                            <i class="fa-solid fa-store"></i>
+                            <p class="oferta-list-text"> 
+                                Envío rápido, gratuito
+                                y sin contacto
+                            </p>
+                        </li>
+                        <li class="oferta-list-item">
+                            <i class="fa-solid fa-arrow-rotate-left"></i>
+                            <p class="oferta-list-text">
+                                Devoluciones fâciles y gratuita
+                            </p>
+                        </li>
+                        <li class="oferta-list-item">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                            <p class="oferta-list-text">
+                                Posibilidad de pago a
+                                plazos
+                            </p>
                         </li>
                     </ul>
                 </div>
             </div>
-
+        <!-- sección accesorios recomendados -->    
             <h2>Accesorios recomendados</h2>
 
             <div class="accesorios-recomendados">
-                    <div class="accesorio">
-                        <img src="https://via.placeholder.com/236x170" alt="" class="imagen-accesorio">
-                        <h3>Cargador</h3>
-                        <p>
-                                El adaptador de corriente USB-C
-                                de 20 W es muy rápido y
-                                eficiente, así que va de perlas
-                                para cargar tus dispositivos en
-                                cualquier lugar.
-                        </p>
-                    </div>
-                    <div class="accesorio">
-                            <img src="https://via.placeholder.com/236x170" alt="" class="imagen-accesorio">
-                            <h3>Base de carga inalambrica</h3>
-                            <button id="button-cargador-inalambrico">oferta</button>
-                            <p>
-                                Sistema de soporte para que
-                                sigas usando tu smartphone
-                                cómodamente mientras lo
-                                cargas. Compatible con carga
-                                rápida de 20W.
-                            </p>
-                    </div>
-                    <div class="accesorio">
-                        <img src="https://via.placeholder.com/236x170" alt="" class="imagen-accesorio">
-                        <h3>Funda piel</h3>
-                            <p>
-                            Fabricadas en piel europea
-                            curtida y teñida con un proceso
-                            especial, son suaves al tacto y
-                            adquieren un tono natural con el
-                            tiempo. Los botones de aluminio
-                            combinan a la perfección con el
-                            acabado de la piel.
-                            </p>
-                    </div>
-                    <div class="accesorio">
-                            <img src="https://via.placeholder.com/236x170" alt="" class="imagen-accesorio">    
-                            <h3>Cargador</h3>
-                            <button>Nuevo</button>
-                            <p>
-                                El adaptador de corriente USB-C
-                                de 20 W es muy rápido y
-                                eficiente, así que va de perlas
-                                para cargar tus dispositivos en
-                                cualquier lugar
-                            </p>
-                    </div>
+                <div class="accesorio">
+                    <img src="https://via.placeholder.com/236x170" alt="" class="imagen-accesorio">
+                    <h4>
+                        Cargador   
+                    </h4>
+                    <p>
+                        El adaptador de corriente USB-C
+                        de 20 W es muy rápido y
+                        eficiente, así que va de perlas
+                        para cargar tus dispositivos en
+                        cualquier lugar.
+                    </p>
+                </div>
+                <div class="accesorio">
+                    <img src="https://via.placeholder.com/236x170" alt="" class="imagen-accesorio">
+                    <h4>
+                        Base de carga inalambrica
+                    </h4>
+                    <button id="button-cargador-inalambrico">oferta</button>
+                    <p>
+                        Sistema de soporte para que
+                        sigas usando tu smartphone
+                        cómodamente mientras lo
+                        cargas. Compatible con carga
+                        rápida de 20W.
+                    </p>
+                </div>
+                <div class="accesorio">
+                    <img src="https://via.placeholder.com/236x170" alt="" class="imagen-accesorio">
+                    <h4>
+                        Funda piel
+                    </h4>
+                    <p>
+                        Fabricadas en piel europea
+                        curtida y teñida con un proceso
+                        especial, son suaves al tacto y
+                        adquieren un tono natural con el
+                        tiempo. Los botones de aluminio
+                        combinan a la perfección con el
+                        acabado de la piel.
+                    </p>
+                </div>
+                <div class="accesorio">
+                    <img src="https://via.placeholder.com/236x170" alt="" class="imagen-accesorio">    
+                    <h4>
+                        Cargador
+                    </h4>
+                    <button>
+                        Nuevo
+                    </button>
+                    <p>
+                        El adaptador de corriente USB-C
+                        de 20 W es muy rápido y
+                        eficiente, así que va de perlas
+                        para cargar tus dispositivos en
+                        cualquier lugar
+                    </p>
+                </div>
             </div>
-        </div>
+        <!-- sección sorteo -->
+            <div class="sorteo">
+                <div class="sorteo-description">
+                    <h1>
+                        Participa en el sorteo de un
+                        iFhone 13
+                    </h1>
+                    <p>
+                        Este verano, ¡venimos cargados de premios! Así que antes de irte de vacaciones,
+                        ¡participa en nuestro sorteo! y podrás llevarte un regalo increíble como un nuevo
+                        iFhone 13
+                    </p>
+                    <p>
+                        Rellena este formulario para ser uno de los afortunados.
+                    </p>
+                    
+                </div>
 
-        <div class="sorteo">
-            <div class="sorteo-description">
-                <h1>Participa en el sorteo de un
-                    iFhone 13</h1>
-                <p>Este verano, ¡venimos cargados de premios! Así que antes de irte de vacaciones,
-                    ¡participa en nuestro sorteo! y podrás llevarte un regalo increíble como un nuevo
-                    iFhone 13</p>
-                <p>Rellena este formulario para ser uno de los afortunados.</p>
+                <form action="" class="sorteo-form">
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Ari Gold" name="name" id="name">
                 
-            </div>
-
-            <form action="" class="sorteo-form">
-                <label for="name">Nombre</label>
-                <input type="text" placeholder="Ari Gold" name="name" id="name">
-            
-                <label for="email">Email</label>
-                <input type="email" placeholder="arigold@mga.com" name="email" id="email">
-                <button type="submit" class="button">Enviar</button>
-            </form>
-        </div>
-
-        
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="arigold@mga.com" name="email" id="email">
+                    <button type="submit" class="button">Enviar</button>
+                </form>
+            </div>     
     </main>
 
     <footer>
         <div class="footer-text">
+            <i class="fa-solid fa-copyright"></i>
             <p>agoodshop</p>
         </div>
     </footer>

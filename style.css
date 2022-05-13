@@ -1,14 +1,42 @@
+/* common */
 
 body {
-    max-width: 1439px;
+    max-width: none;
+    font-family: sans-serif;
 }
 
 main {
-    padding: 1em 2em;
+    padding: 2em 2em;
 }
 
-h3 {
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
     width: 100%;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: #3883F6;
+    padding: 7px;
+    color: white;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+
+/* header row */
+
+
+h3 {
+    flex-grow: 1;
 }
 
 .links {
@@ -23,50 +51,43 @@ h3 {
     gap: 1em;
 }
 .links-item-contactar {
-    border: 1px solid rgb(177, 173, 173);
+    border: 1px solid rgb(210, 206, 206);
     background-color: white;
     border-radius: 8px;
     padding: 7px;
 }
+
 .row {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(177, 173, 173);;
+    border-bottom: 1px solid rgb(210, 206, 206);
     padding: 0 2em;
-    
+    align-items: center;
 }
 
-ul {
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    color: gray;
-    text-decoration: none;
-}
-
-button {
-    border-radius: 8px;
-    border: 1px solid black;
-    background-color: #3883F6;
-    padding: 7px;
-    color: white;
-}
-
-#button-cargador-inalambrico {
-    background-color: #DD2121
-}
+/* sección oferta */
 
 .oferta {
     clear: both;
     display: flex;
     flex-direction: column;
     position: relative;
-    
+    gap: 1em;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.oferta-list-text {
+    margin: 0;
+    padding: 0;
+}
+
+.oferta-list-item {
+    display: flex;
+    gap: 10px;
 }
 
 #oferta-texto-llamativo {
@@ -74,41 +95,70 @@ button {
 }
 
 .oferta-info {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 0;
-    display: inline-block;
+    height: 100%;
+    width: 100%;
+    gap: 1em;
+    
 }
-
-
 .oferta-list {
     display: flex;
-    gap: 12px;
+    gap: 1em;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
-.imagen-oferta {
+.oferta-image {
     height: 100%;
     width: 100%;
 }
 
 .imagen-label {
     position: absolute;
-    background-color: green;
+    background-color: #1CC65E;
     padding: 10px;
     color: white;
     top: 25px;
     left: 15px;
 }
-    
-img {
-    width: 100%;
+
+.precio-tag {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.precio {
+    font-size:x-large;
+}
+
+/* sección accesorios recomendados */
+
+
+li {
+    list-style: none;
+    max-width: 44%;
+}
+
+#button-cargador-inalambrico {
+    background-color: #DD2121
 }
 
 .accesorio {
-    border: 1px solid grey;
+    border: 1px solid rgb(210, 206, 206);
+    border-radius: 6px;
     margin-bottom: 1em;
-    padding: 15px;
-
+    padding: 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
 }
+
+/* sección sorteo */
 
 .sorteo {
     display: flex;
@@ -127,46 +177,43 @@ img {
 }
 
 input {
-    border: 1px ridge gray ;
+    border: 1px solid rgb(210, 206, 206) ;
     border-radius: 5px;
     padding: 8px;
 }
 
 @media screen and (min-width:768px) {
-    .accesorios-recomendados {
-        display: flex;
-        gap: 1em;
-        
-    }
+
+.main {
+    padding: 2em 5em;
+}
+
+.accesorios-recomendados {
+    display: flex;
+    gap: 1em;
     
 }
 
-@media screen and (min-width:768px) {
-    .oferta,
-    .sorteo {
-        display: flex;
-        flex-direction: row;
-        gap: 1em;
-    }
-    
+.oferta,
+.sorteo {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
 }
 
-
-@media screen and (min-width:768px) {
-    .links {
-        visibility: visible;
-        justify-content: center
-    }
+.oferta-list {
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+    
+.links {
+    visibility: visible;
+    justify-content: center
 }
 
-@media screen and (min-width:768px) {
-    .accesorio {
-        border: 1px solid grey;
-        margin-bottom: 1em;
-        padding: 15px;
-        width: 25%;
-    }
-    
+.accesorio {
+    width: 25%;
+}
 }
 
 /* footer */
@@ -174,6 +221,7 @@ input {
 .footer-text {
     display: flex;
     justify-content: center;
-    border-top: 1px solid rgb(177, 173, 173);;
-
+    align-items: center;
+    border-top: 1px solid rgb(210, 206, 206);
+    gap: 5px;
 }
